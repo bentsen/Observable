@@ -4,4 +4,9 @@ platform :ios, '9.0'
 
 target 'Observable_Example' do
   pod 'Observable', :path => '../'
+  
+  target 'Observable.Tests' do
+    inherit! :search_paths
+  end
+  
 end

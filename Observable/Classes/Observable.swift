@@ -9,18 +9,12 @@ public class ImmutableObservable<T> {
 
     fileprivate let lock: Lock = Mutex()
 
+    private var skipCount: Int?
+    private var skipped = Int(0)
+    
     fileprivate var _value: T {
         didSet {
-            observers.values.forEach { observer, dispatchQueue in
-                
-                if let dispatchQueue = dispatchQueue {
-                    dispatchQueue.async {
-                        observer(self.value, oldValue)
-                    }
-                } else {
-                    observer(value, oldValue)
-                }
-            }
+            self.notifyObservers(value: self.value, oldValue: oldValue)
         }
     }
 
@@ -39,7 +33,7 @@ public class ImmutableObservable<T> {
         let id = uniqueID.next()!
 
         observers[id] = (observer, queue)
-        observer(value, nil)
+        notifyObservers(value: value, oldValue: nil)
 
         let disposable = Disposable { [weak self] in
             self?.observers[id] = nil
@@ -48,9 +42,30 @@ public class ImmutableObservable<T> {
         return disposable
     }
 
+    private func notifyObservers(value: T, oldValue: T?) {
+        
+        guard self.skipped >= self.skipCount ?? 0 else { skipped += 1; return }
+        
+        observers.values.forEach { observer, dispatchQueue in
+            if let dispatchQueue = dispatchQueue {
+                dispatchQueue.async {
+                    observer(value, oldValue)
+                }
+            } else {
+                observer(value, oldValue)
+            }
+        }
+    }
+    
     public func removeAllObservers() {
         observers.removeAll()
     }
+    
+    public func skip(count: Int?) -> ImmutableObservable {
+        self.skipCount = count
+        return self
+    }
+    
 }
 
 public class Observable<T>: ImmutableObservable<T> {

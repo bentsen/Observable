@@ -11,22 +11,44 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		93567F77A93F46792146051B /* Pods_Observable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D41EEB8811DB6EC3D28D22 /* Pods_Observable_Example.framework */; };
 		A90454EC1F44978C00D88C96 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90454EB1F44978C00D88C96 /* CollectionView.swift */; };
 		A90454EE1F44992400D88C96 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90454ED1F44992400D88C96 /* Slider.swift */; };
+		C0DA67EA5462D2689A42F073 /* Pods_Observable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0745D287A00A287372ADDCFD /* Pods_Observable_Tests.framework */; };
+		DC8CEEFC222FA94A00E1982E /* Observable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CEEFB222FA94A00E1982E /* Observable_Tests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC8CEEFE222FA94A00E1982E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = Observable_Example;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0745D287A00A287372ADDCFD /* Pods_Observable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Observable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FBFCAAB79B180937E68F75 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		32D41EEB8811DB6EC3D28D22 /* Pods_Observable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Observable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9A85AE9CD9CDAEDCFB1013 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4B80EA5D126C7A948CF8FD3C /* Observable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Observable.podspec; path = ../Observable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D118EBC58C0F0DFD2EBDD9D /* Pods-Observable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observable_Example.debug.xcconfig"; path = "Target Support Files/Pods-Observable_Example/Pods-Observable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Observable..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Observable..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		76C79BEF07A9DFA231B3398E /* Pods-Observable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observable_Example.release.xcconfig"; path = "Target Support Files/Pods-Observable_Example/Pods-Observable_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9B37633C024024063B51039C /* Pods-Observable.Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observable.Tests.debug.xcconfig"; path = "Target Support Files/Pods-Observable.Tests/Pods-Observable.Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A339D56F839E084377E36DCC /* Pods-Observable.Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Observable.Tests.release.xcconfig"; path = "Target Support Files/Pods-Observable.Tests/Pods-Observable.Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A90454EB1F44978C00D88C96 /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		A90454ED1F44992400D88C96 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		DC8CEEF9222FA94900E1982E /* Observable.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observable.Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8CEEFB222FA94A00E1982E /* Observable_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable_Tests.swift; sourceTree = "<group>"; };
+		DC8CEEFD222FA94A00E1982E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +56,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93567F77A93F46792146051B /* Pods_Observable_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8CEEF6222FA94900E1982E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DA67EA5462D2689A42F073 /* Pods_Observable_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1442F220B45569E596E849DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D118EBC58C0F0DFD2EBDD9D /* Pods-Observable_Example.debug.xcconfig */,
+				76C79BEF07A9DFA231B3398E /* Pods-Observable_Example.release.xcconfig */,
+				9B37633C024024063B51039C /* Pods-Observable.Tests.debug.xcconfig */,
+				A339D56F839E084377E36DCC /* Pods-Observable.Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Observable */,
+				DC8CEEFA222FA94A00E1982E /* Observable.Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
+				1442F220B45569E596E849DE /* Pods */,
+				FA20D71ADEA853913936CCAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* Observable..app */,
+				DC8CEEF9222FA94900E1982E /* Observable.Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +144,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DC8CEEFA222FA94A00E1982E /* Observable.Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DC8CEEFB222FA94A00E1982E /* Observable_Tests.swift */,
+				DC8CEEFD222FA94A00E1982E /* Info.plist */,
+			);
+			path = Observable.Tests;
+			sourceTree = "<group>";
+		};
+		FA20D71ADEA853913936CCAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32D41EEB8811DB6EC3D28D22 /* Pods_Observable_Example.framework */,
+				0745D287A00A287372ADDCFD /* Pods_Observable_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Observable_Example" */;
 			buildPhases = (
+				A7AF2755DC149DE2EC9300A6 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
+				E14D21C133472DA09A57555B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,20 +184,46 @@
 			productReference = 607FACD01AFB9204008FA782 /* Observable..app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC8CEEF8222FA94900E1982E /* Observable.Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8CEF02222FA94A00E1982E /* Build configuration list for PBXNativeTarget "Observable.Tests" */;
+			buildPhases = (
+				C58448119606C6CAEFFD805E /* [CP] Check Pods Manifest.lock */,
+				DC8CEEF5222FA94900E1982E /* Sources */,
+				DC8CEEF6222FA94900E1982E /* Frameworks */,
+				DC8CEEF7222FA94900E1982E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC8CEEFF222FA94A00E1982E /* PBXTargetDependency */,
+			);
+			name = Observable.Tests;
+			productName = Observable.Tests;
+			productReference = DC8CEEF9222FA94900E1982E /* Observable.Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 29X3GG489T;
+						DevelopmentTeam = HLW25WR79M;
 						LastSwiftMigration = 1000;
+						ProvisioningStyle = Manual;
+					};
+					DC8CEEF8222FA94900E1982E = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = HLW25WR79M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -149,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* Observable_Example */,
+				DC8CEEF8222FA94900E1982E /* Observable.Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,7 +256,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC8CEEF7222FA94900E1982E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7AF2755DC149DE2EC9300A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Observable_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C58448119606C6CAEFFD805E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Observable.Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14D21C133472DA09A57555B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Observable_Example/Pods-Observable_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Observable/Observable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Observable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Observable_Example/Pods-Observable_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
@@ -177,7 +346,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC8CEEF5222FA94900E1982E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8CEEFC222FA94A00E1982E /* Observable_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC8CEEFF222FA94A00E1982E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* Observable_Example */;
+			targetProxy = DC8CEEFE222FA94A00E1982E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
@@ -292,31 +477,100 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D118EBC58C0F0DFD2EBDD9D /* Pods-Observable_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 29X3GG489T;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HLW25WR79M;
 				INFOPLIST_FILE = Observable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inflexsys.observable;
 				PRODUCT_NAME = Observable.;
+				PROVISIONING_PROFILE_SPECIFIER = "Generic Ad Hoc Provisioning Profile InfleXsys";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C79BEF07A9DFA231B3398E /* Pods-Observable_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 29X3GG489T;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Observable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inflexsys.observable;
 				PRODUCT_NAME = Observable.;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		DC8CEF00222FA94A00E1982E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B37633C024024063B51039C /* Pods-Observable.Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HLW25WR79M;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Observable.Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inflexsys.Observable-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observable..app/Observable.";
+			};
+			name = Debug;
+		};
+		DC8CEF01222FA94A00E1982E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A339D56F839E084377E36DCC /* Pods-Observable.Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLW25WR79M;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Observable.Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inflexsys.Observable-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Observable..app/Observable.";
 			};
 			name = Release;
 		};
@@ -337,6 +591,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC8CEF02222FA94A00E1982E /* Build configuration list for PBXNativeTarget "Observable.Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8CEF00222FA94A00E1982E /* Debug */,
+				DC8CEF01222FA94A00E1982E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
