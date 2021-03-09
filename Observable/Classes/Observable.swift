@@ -14,7 +14,10 @@ public class ImmutableObservable<T> {
     
     fileprivate var _value: T {
         didSet {
-            self.notifyObservers(value: self.value, oldValue: oldValue)
+            let newValue = _value
+            observers.values.forEach { observer, dispatchQueue in
+                notify(observer: observer, queue: dispatchQueue, value: newValue, oldValue: oldValue)
+            }
         }
     }
 
@@ -33,8 +36,8 @@ public class ImmutableObservable<T> {
         let id = uniqueID.next()!
 
         observers[id] = (observer, queue)
-        notifyObservers(value: value, oldValue: nil)
-
+        notify(observer: observer, queue: queue, value: value, oldValue: nil)
+        
         let disposable = Disposable { [weak self] in
             self?.observers[id] = nil
         }
@@ -42,7 +45,7 @@ public class ImmutableObservable<T> {
         return disposable
     }
 
-    private func notifyObservers(value: T, oldValue: T?) {
+    fileprivate func notify(observer: @escaping Observer, queue: DispatchQueue? = nil, value: T, oldValue: T? = nil) {
         
         guard self.skipped >= self.skipCount ?? 0 else { skipped += 1; return }
         
